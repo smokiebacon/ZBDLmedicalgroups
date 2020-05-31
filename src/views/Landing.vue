@@ -117,6 +117,7 @@
         </div>
       </div>
     </section>
+
     <section class="section section-lg">
       <div class="container">
         <div class="row row-grid align-items-center">
@@ -666,8 +667,11 @@
 </style>
 
 <script>
+import Card from '@/components/Card'
+
 export default {
-  name: 'home',
-  components: {}
+  components: {
+    Card
+  }
 }
 </script>

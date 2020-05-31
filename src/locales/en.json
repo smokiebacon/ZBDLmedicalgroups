@@ -1,10 +1,10 @@
 {
-  "message": "hello i18nasdasd !!",
   "nav": {
     "products": "Products",
     "contact": "Contact Us"
   },
   "hero": {
+    "call-to-action": "See Catalog",
     "sub-heading": "Personal Protection Equipment"
   }
 }

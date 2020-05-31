@@ -1,10 +1,10 @@
 {
-  "message": "hello i18nasdasd !!",
   "nav": {
     "products": "产品",
-    "contact": "联系我们"
+    "contact": "聯繫我們"
   },
   "hero": {
-    "sub-heading": "个人防护装备"
+    "call-to-action": "看产品",
+    "sub-heading": "自保護裝備"
   }
 }

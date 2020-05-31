@@ -121,27 +121,12 @@
         </li>
       </ul>
       <div>
-        <base-dropdown>
-          <base-button
-            slot="title"
-            type="secondary"
-            class="dropdown-toggle"
-            @click="setLocale('en')"
-          >
-            <img
-              src="https://demos.creative-tim.com/argon-design-system/assets/img/icons/flags/US.png"
-            />
-            ENGLISH
-          </base-button>
-          <li>
-            <a class="dropdown-item" href="#" @click="setLocale('ch')">
-              <img
-                src="https://demos.creative-tim.com/argon-design-system/assets/img/icons/flags/CH.png"
-              />
-              CHINESE
-            </a>
-          </li>
-        </base-dropdown>
+        <div class="locale-switcher">
+          <select v-model="$i18n.locale">
+            <option value="en">English</option>
+            <option value="ch">中文</option>
+          </select>
+        </div>
       </div>
     </base-nav>
   </header>
