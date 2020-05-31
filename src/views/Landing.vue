@@ -20,7 +20,7 @@
               <div class="col-lg-6">
                 <h1 class="display-3 text-white">
                   ZBDL Medical Groups
-                  <span>Personal Protection Equipment Hello World</span>
+                  <span>{{ $t('hero.sub-heading') }}</span>
                 </h1>
                 <div class="btn-wrapper">
                   <base-button

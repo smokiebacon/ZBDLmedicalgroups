@@ -28,7 +28,7 @@
             role="button"
           >
             <i class="ni ni-ui-04 d-lg-none"></i>
-            <span class="nav-link-inner--text">Products</span>
+            <span class="nav-link-inner--text">{{ $t('nav.products') }}</span>
           </a>
           <div class="dropdown-menu-inner">
             <a
@@ -116,20 +116,25 @@
             <span class="btn-inner--icon">
               <i class="fa fa-cloud-download mr-2"></i>
             </span>
-            <span class="nav-link-inner--text">Contact Us</span>
+            <span class="nav-link-inner--text">{{ $t('nav.contact') }}</span>
           </a>
         </li>
       </ul>
       <div>
         <base-dropdown>
-          <base-button slot="title" type="secondary" class="dropdown-toggle">
+          <base-button
+            slot="title"
+            type="secondary"
+            class="dropdown-toggle"
+            @click="setLocale('en')"
+          >
             <img
               src="https://demos.creative-tim.com/argon-design-system/assets/img/icons/flags/US.png"
             />
             ENGLISH
           </base-button>
           <li>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="#" @click="setLocale('ch')">
               <img
                 src="https://demos.creative-tim.com/argon-design-system/assets/img/icons/flags/CH.png"
               />
@@ -151,6 +156,12 @@ export default {
     BaseNav,
     CloseButton,
     BaseDropdown
+  },
+  methods: {
+    setLocale(locale) {
+      console.log(locale)
+      this.$i18n.locale = locale
+    }
   }
 }
 </script>
